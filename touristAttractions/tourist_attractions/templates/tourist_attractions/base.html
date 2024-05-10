@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% block head %}
+    {% endblock %}
+  </head>
+  <body>
+    <h1 class="name">City Explorer</h1>
+    <div class="nav">
+        <a href="{% url 'home' %}">Take Me Home</a>
+    </div>
+    {% block content %} 
+    
+    {% endblock %}
+  </body>
+</html>
